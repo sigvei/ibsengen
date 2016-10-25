@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A very tiny Rails app that provides a web API to dole out password phrases
+from [Ibsenphrase](https://github.com/sigvei/ibsenphrase).
 
-Things you may want to cover:
+It implements a single api call:
 
-* Ruby version
+```
+GET /phrase/generate(/length)
+```
 
-* System dependencies
+where the optional `length` sets the number of words returned. The default
+is 5.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This software is released under the MIT license. It is written by Sigve
+Indregard.
